@@ -59,7 +59,7 @@ const ChatPage = () => {
     <div className="chat-page">
       {/* Navbar */}
       <nav className="navbar">
-        <div className="logo"><img src="./src/assets/logo.png" alt="" /></div>
+        <div className="logo"><img src="/logo.png" alt="" /></div>
         <h1>NEED BOT</h1>
       </nav>
 
