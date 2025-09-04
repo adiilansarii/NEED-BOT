@@ -1,11 +1,11 @@
 .chat-page {
   display: flex;
   flex-direction: column;
-  height: 100dvh; /* ✅ dynamic viewport height */
+  height: 100dvh;   /* ✅ dynamic viewport */
+  height: 100svh;   /* ✅ fallback for Safari */
   background: #0f0f0f;
   color: #fff;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-  overflow: hidden; /* ✅ prevent white gaps */
 }
 
 /* Navbar - fixed top */
@@ -45,10 +45,6 @@
   padding: 0.8rem;
   background: #0f0f0f;
   justify-content: center;
-
-  /* ✅ Fix for iOS notch */
-  padding-bottom: max(env(safe-area-inset-bottom), 0.8rem);
-  z-index: 1000;
 }
 
 .chat-input-wrapper {
